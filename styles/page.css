@@ -37,7 +37,8 @@ html, body {
     color: var(--color-link); /* Light blue color for links */
     text-decoration: none; /* Remove underline from links */
 }
-.links a:hover {
+
+.links a:hover, .maps:hover {
     text-decoration: underline; /* Underline links on hover */
 }
 /* Responsive styles */
