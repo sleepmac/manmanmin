@@ -1,34 +1,44 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Courier, monospace;
+    /*font-family: "Lucida Console", "Consolas", monospace;*/
+    font-family: var(--font1), var(--font2), monospace;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--color-back); /* Dark background color */
+    color: var(--color-text); /* Light text color */
 }
-
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px; /* Add some padding for better spacing on mobile */
 }
-
 .art {
     /*white-space: pre;*/
-    font-family: Courier, monospace;
+    font-family: var(--font1), var(--font2), monospace;
+    /*font-family: Courier, monospace;*/
     text-align: left; /* Ensure ASCII Art is left-aligned within the container */
     margin: 0; /* Remove any default margins */
+    color: var(--color-text); /* Light text color for ASCII art */
 }
 
 .links {
     display: flex; /* Display links in a row */
     justify-content: center; /* Center links horizontally */
     gap: 10px; /* Add space between links */
-    margin-top: 0px; /* Add margin above links */
+    /*margin-top: 0px; !* Add margin above links *!*/
 }
-
+.links a {
+    color: var(--color-link); /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+.links a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
 /* Responsive styles */
 @media (max-width: 600px) {
     body {
