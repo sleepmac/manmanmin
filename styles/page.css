@@ -2,7 +2,9 @@ html, body {
     height: 100%;
     margin: 0;
     /*font-family: "Lucida Console", "Consolas", monospace;*/
+    /*font-family: Courier, monospace;*/
     font-family: var(--font1), var(--font2), monospace;
+    font-size: 17px;
 
     display: flex;
     justify-content: center;
@@ -20,7 +22,6 @@ html, body {
 .art {
     /*white-space: pre;*/
     font-family: var(--font1), var(--font2), monospace;
-    /*font-family: Courier, monospace;*/
     text-align: left; /* Ensure ASCII Art is left-aligned within the container */
     margin: 0; /* Remove any default margins */
     color: var(--color-text); /* Light text color for ASCII art */
