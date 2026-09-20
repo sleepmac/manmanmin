@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.man-man.online/sitemap.xml
+Sitemap: https://man-man.online/sitemap.xml
