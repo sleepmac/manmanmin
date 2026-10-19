@@ -82,7 +82,13 @@ GoatCounter автоматически учитывает `utm_campaign` и `utm
 
 ## События
 
-Подготовлены атрибуты `data-goatcounter-click` и `data-goatcounter-title`:
+Ссылки размечены общими атрибутами `data-event` (имя события) и
+`data-event-title` (подпись в GoatCounter). Один обработчик в
+`scripts/analytics.js` отправляет каждое нажатие и в GA4, и в GoatCounter.
+Нажатия, сделанные до загрузки `count.js`, ставятся в очередь и отправляются
+после загрузки, поэтому оба счётчика видят одинаковый набор кликов.
+Атрибуты `data-goatcounter-click` не используем: иначе GoatCounter
+посчитает клик дважды.
 
 - `click_booking` — переход к записи в DIKIDI;
 - `click_phone` — нажатие на телефон;
